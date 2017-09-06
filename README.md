@@ -18,3 +18,4 @@ Data is taken from the following two websites:
 
 ### Result and Conclusion:
 --------
+![Violent Crime AND Rent](https://github.com/IrisGong/RentCrimeCorrelation/blob/master/Violent%20Crime%20AND%20Rent.png)
