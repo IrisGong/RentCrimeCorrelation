@@ -18,4 +18,3 @@ Data is taken from the following two websites:
 
 ### Result and Conclusion:
 --------
-![Violent Crime AND Rent] (//Users/huangxuanyugong/Desktop/
