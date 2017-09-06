@@ -18,4 +18,9 @@ Data is taken from the following two websites:
 
 ### Result and Conclusion:
 --------
+1. The following three graph are the results for Violent Crime and Rent, Property Crime and Rent, Crime and Rent. 
+2. Blue points are the 79 American major cities from crime per capita file and rent per city file. 
+3. Line graphs are the polynomial that 
 ![Violent Crime AND Rent](https://github.com/IrisGong/RentCrimeCorrelation/blob/master/Violent%20Crime%20AND%20Rent.png)
+![Property Crime AND Rent](https://github.com/IrisGong/RentCrimeCorrelation/blob/master/Property%20Crime%20AND%20Rent.png)
+![Crime AND Rent](https://github.com/IrisGong/RentCrimeCorrelation/blob/master/Crime%20AND%20Rent.png)
