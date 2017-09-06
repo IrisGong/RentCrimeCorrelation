@@ -5,8 +5,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import r2_score
 
-scale = StandardScaler()
-
 ## We need to find the cities that showed up in both files. 
 # Read the cityCrimeList.csv
 crimeCityTable = pd.read_csv('cityCrimeList.csv')
@@ -63,6 +61,7 @@ vrGraph = plt.figure(1)
 plt.xlabel("Rent of Cities")
 plt.ylabel("Violent Crime Per Capita")
 plt.title("Violent Crime AND Rent")
+plt.scatter(X, vrY)
 vrP4 = np.poly1d(np.polyfit(X, vrY, 1))
 vrxp = np.linspace(500, 3000, 10000)
 plt.plot(vrxp, vrP4(vrxp), c = 'r')
