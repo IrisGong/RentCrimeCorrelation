@@ -62,9 +62,6 @@ plt.xlabel("Rent of Cities")
 plt.ylabel("Violent Crime Per Capita")
 plt.title("Violent Crime AND Rent")
 plt.scatter(X, vrY)
-vrP4 = np.poly1d(np.polyfit(X, vrY, 1))
-vrxp = np.linspace(500, 3000, 10000)
-plt.plot(vrxp, vrP4(vrxp), c = 'r')
 vrGraph.show()
 
 ## Property crime and rent graph. 
@@ -79,9 +76,6 @@ plt.scatter(X, prY)
 plt.xlabel("Rent of Cities")
 plt.ylabel("Property Crime Per Capita")
 plt.title("Property Crime AND Rent")
-prP4 = np.poly1d(np.polyfit(X, prY, 1))
-prxp = np.linspace(500, 3000, 10000)
-plt.plot(prxp, prP4(prxp), c = 'r')
 prGraph.show()
 
 ## Crime and rent graph. 
@@ -97,19 +91,22 @@ plt.scatter(X, crY)
 plt.xlabel("Rent of Cities")
 plt.ylabel("Crime Per Capita")
 plt.title("Crime AND Rent")
-crP4 = np.poly1d(np.polyfit(X, crY, 1))
+crP1 = np.poly1d(np.polyfit(X, crY, 1))
+crP3 = np.poly1d(np.polyfit(X, crY, 3))
+crP5 = np.poly1d(np.polyfit(X, crY, 5))
 crxp = np.linspace(500, 3000, 10000)
-plt.plot(crxp, crP4(crxp), c = 'r')
+plt.plot(crxp, crP1(crxp), c = 'r')
+plt.plot(crxp, crP3(crxp), c = 'k')
+plt.plot(crxp, crP5(crxp), c = 'g')
+plt.legend(['1st Poly', '3rd Poly', '5th Poly'], loc = 1)
 crGraph.show()
 
 
 # All the r2 scores for all the above graph
-vrr2 = r2_score(vrY, vrP4(X))
-print(vrr2)
-prr2 = r2_score(prY, prP4(X))
-print(prr2)
-crr2 = r2_score(crY, crP4(X))
-print(crr2)
+print("The r-squared error for 1st polynomial is: " + str(r2_score(crY, crP1(X))))
+print("The r-squared error for 3rd polynomial is: " + str(r2_score(crY, crP3(X))))
+print("The r-squared error for 5th polynomial is: " + str(r2_score(crY, crP5(X))))
+
 
 input()
 
