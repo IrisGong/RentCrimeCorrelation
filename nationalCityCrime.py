@@ -59,7 +59,7 @@ for city in commonCityList:
 
 vrGraph = plt.figure(1)
 plt.xlabel("Rent of Cities")
-plt.ylabel("Violent Crime Per Capita")
+plt.ylabel("Violent Crime Per 100,000 People")
 plt.title("Violent Crime and Rent")
 plt.scatter(X, vrY)
 vrGraph.show()
@@ -74,7 +74,7 @@ for city in commonCityList:
 prGraph = plt.figure(2)
 plt.scatter(X, prY)
 plt.xlabel("Rent of Cities")
-plt.ylabel("Property Crime Per Capita")
+plt.ylabel("Property Crime Per 100,000 People")
 plt.title("Property Crime and Rent")
 prGraph.show()
 
@@ -89,7 +89,7 @@ for city in commonCityList:
 crGraph = plt.figure(3)
 plt.scatter(X, crY)
 plt.xlabel("Rent of Cities")
-plt.ylabel("Crime Per Capita")
+plt.ylabel("Crime Per 100,000 People")
 plt.title("Fitting Polynomial for All Crimes and Rent")
 crP1 = np.poly1d(np.polyfit(X, crY, 1))
 crP3 = np.poly1d(np.polyfit(X, crY, 3))
