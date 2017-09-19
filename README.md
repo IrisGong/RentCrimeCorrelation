@@ -1,4 +1,4 @@
-# RentCrimeCorrelation
+# Rent Crime Correlation
 
 ### Introduction
 --------
@@ -35,4 +35,4 @@ A clear downward relation showed among scatter graph points. However, by increas
 ![Property Crime and Rent](https://github.com/IrisGong/RentCrimeCorrelation/blob/master/Property%20Crime%20AND%20Rent.png)
 ![Fitting Polynomials for All Crimes and Rent](https://github.com/IrisGong/RentCrimeCorrelation/blob/master/Fitting%20Polynomials%20for%20All%20Crimes%20and%20Rent.png)
 
-Please also see my other projects! 
+
