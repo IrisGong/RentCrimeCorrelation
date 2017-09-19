@@ -1,4 +1,4 @@
-# RentCrimeCorrelation
+# Rent Crime Correlation
 
 ### Introduction
 --------
@@ -18,9 +18,21 @@ Data is taken from the following two websites:
 
 ### Result and Conclusion:
 --------
-1. The following three graph are the results for Violent Crime and Rent, Property Crime and Rent, Crime and Rent. 
+##### Result:
+1. The following three graphs are the results for Violent Crime and Rent, Property Crime and Rent and Fitting Polynomials for All Crimes and Rent. 
 2. Blue points are the 79 American major cities from crime per capita file and rent per city file. 
-3. Line graphs are the polynomial that 
-![Violent Crime AND Rent](https://github.com/IrisGong/RentCrimeCorrelation/blob/master/Violent%20Crime%20AND%20Rent.png)
-![Property Crime AND Rent](https://github.com/IrisGong/RentCrimeCorrelation/blob/master/Property%20Crime%20AND%20Rent.png)
-![Crime AND Rent](https://github.com/IrisGong/RentCrimeCorrelation/blob/master/Crime%20AND%20Rent.png)
+3. Line graphs are the 1st, 3rd, 5th polynomials to fit the data. 
+4. R-squared errors are computed as following: 
+
+  * The r-squared error for 1st polynomial is: 0.165356016742
+  * The r-squared error for 3rd polynomial is: 0.173871149373
+  * The r-squared error for 5th polynomial is: 0.177996043172
+  
+##### Conclusion:
+A clear downward relation showed among scatter graph points. However, by increasing 2 degrees of polynomial at one time, the r-squared error merely increased by 0.01, which implies it is difficult to find the best fitting polynomials. 
+
+![Violent Crime and Rent](https://github.com/IrisGong/RentCrimeCorrelation/blob/master/Violent%20Crime%20AND%20Rent.png)
+![Property Crime and Rent](https://github.com/IrisGong/RentCrimeCorrelation/blob/master/Property%20Crime%20AND%20Rent.png)
+![Fitting Polynomials for All Crimes and Rent](https://github.com/IrisGong/RentCrimeCorrelation/blob/master/Fitting%20Polynomials%20for%20All%20Crimes%20and%20Rent.png)
+
+
